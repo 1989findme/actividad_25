@@ -1,0 +1,15 @@
+<h1> El registro fue almacenado conexito </h1>
+<%= link_to "volver", sales_new_path %>
+
+<% @sale.each do |s| %>
+<div class="">
+<p> Código de la venta:<%=s.cod %></p>
+<p> Detalle de la venta:<%=s.detail %> </p>
+<p> Categoria de la venta:<%=s.category %></p>
+<p> Valor de la venta:<%=s.value %></p>
+<p> Descuento de la venta:<%=s.discount %></p>
+<p> Impueto de la venta:<%=s.tax %></p>
+<p> Total de la venta:<%=s.total %></p>
+
+</div>
+<%end %>
